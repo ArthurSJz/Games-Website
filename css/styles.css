@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1f3b;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #0a77f9;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.game-item {
+    display: flex;
+    align-items: stretch; /* Ensures consistent height among items */
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: #0b4a92;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-preview {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.creator-details {
+    display: flex;
+    align-items: center;
+}
+
+.creator-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.game-info p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.game-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.game-info a:hover {
+    background-color: #0a66d9;
+}
+
+@media (max-width: 600px) {
+    .game-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .game-preview {
+        margin-bottom: 10px;
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+    }
+
+    .creator-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .creator-photo {
+        margin-bottom: 10px;
+    }
+}
