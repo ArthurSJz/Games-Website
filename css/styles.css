@@ -39,6 +39,10 @@ footer {
     bottom: 0;
 }
 
+#intro{
+color: #fff;
+}
+
 
 .game-container {
     display: flex;
