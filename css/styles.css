@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+#intro{
+  color:#fff;
+}
+
 footer {
   background-color: #333;
   color: #fff;
